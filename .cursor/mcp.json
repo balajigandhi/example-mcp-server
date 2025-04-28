@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "my-mcp-server-1": {
+      "command": "/Users/bgandhi/Projects/Hackday/MCP_Demos/bgandhi/example-mcp-server/cursor-run-mcp-server.sh",
+      "autoApprove": ["initialize", "chat"],
+      "disabled": false,
+      "type": "stdio"
+    }
+  }
+}

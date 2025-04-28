@@ -1,4 +1,5 @@
 import anyio
+import click
 import mcp.types as types
 from mcp.server.lowlevel import Server
 
@@ -11,6 +12,7 @@ async def check_mood(
     return [types.TextContent(type="text", text=msg)]
 
 
+@click.command()
 def main() -> int:
     app = Server("mcp-mood-server")
 
@@ -68,7 +70,3 @@ def main() -> int:
     anyio.run(arun)
 
     return 0
-
-
-if __name__ == "__main__":
-    main()
